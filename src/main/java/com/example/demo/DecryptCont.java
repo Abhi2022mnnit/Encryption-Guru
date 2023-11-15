@@ -1,6 +1,6 @@
-package com.example.demo.Controllers;
+package com.example.demo;
 
-import com.example.demo.EncryptAlgo;
+import animatefx.animation.BounceIn;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.collections.FXCollections;
@@ -9,14 +9,20 @@ import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.TransferMode;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -52,6 +58,19 @@ public class DecryptCont implements Initializable{
 //    Image eye_SlashImage = new Image(getClass().getResourceAsStream("/Eye_Slash.png"));
 //    @FXML
 //    ImageView imageView = new ImageView();
+
+private Stage stage;
+private Parent root;
+private Scene scene;
+
+    public void homeScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("homePage.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        new BounceIn(root).play();
+        stage.show();
+    }
 
 
         @FXML

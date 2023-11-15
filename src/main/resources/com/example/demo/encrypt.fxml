@@ -15,12 +15,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="913.0" style="-fx-border-color: #ff6a41; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="913.0" style="-fx-border-color: #ff6a41; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EncryptCont">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff6a41" height="543.0" layoutX="273.0" layoutY="-2.0" stroke="#ff6a41" strokeType="INSIDE" width="61.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <Polygon fill="#bec0c1" layoutX="859.0" layoutY="497.0" points="-325.4000244140625, 40.0, 53.99993896484375, 40.0, 53.99993896484375, -417.0" stroke="#bec0c1" strokeType="INSIDE" />
@@ -49,11 +48,14 @@
                   <Font name="Bauhaus 93" size="34.0" />
                </font>
             </Label>
-            <Circle fill="WHITE" layoutX="118.0" layoutY="160.0" onMouseClicked="#homeScene" radius="52.0" stroke="WHITE" strokeType="INSIDE" />
-            <Label layoutX="84.0" layoutY="123.0" onMouseClicked="#homeScene" prefHeight="76.0" prefWidth="67.0" />
-            <ImageView fitHeight="48.0" fitWidth="66.0" layoutX="95.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+            <Button alignment="BOTTOM_CENTER" layoutX="57.0" layoutY="132.0" mnemonicParsing="false" onAction="#homeScene" prefHeight="132.0" prefWidth="132.0" style="-fx-background-radius: 100; -fx-background-color: FFFFFF;" text="HOME" textFill="#ff6a41">
+               <font>
+                  <Font name="Bauhaus 93" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="70.0" fitWidth="69.0" layoutX="90.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../Downloads/home_app_logo_FILL0_wght400_GRAD0_opsz24.png" />
+                  <Image url="@home_Icon_WhiteBack.png" />
                </image>
             </ImageView>
          </children></Pane>

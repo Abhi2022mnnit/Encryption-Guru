@@ -1,4 +1,4 @@
-package com.example.demo.Controllers;
+package com.example.demo;
 
 
 public class Data{

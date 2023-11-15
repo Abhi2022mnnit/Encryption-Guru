@@ -1,6 +1,6 @@
-package com.example.demo.Controllers;
+package com.example.demo;
 
-import com.example.demo.EncryptAlgo;
+import animatefx.animation.BounceIn;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.collections.FXCollections;
@@ -27,7 +27,7 @@ import javafx.scene.input.DragEvent;
 import javafx.scene.input.TransferMode;
 import javafx.stage.FileChooser;
 
-public class HelloController implements Initializable {
+public class EncryptCont implements Initializable {
 
     @FXML
     private TableColumn<Data, Data> delete_Button;
@@ -80,6 +80,7 @@ public class HelloController implements Initializable {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        new BounceIn(root).play();
         stage.show();
     }
 
