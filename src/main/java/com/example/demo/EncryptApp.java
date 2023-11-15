@@ -1,5 +1,5 @@
 package com.example.demo;
-
+//
 import animatefx.animation.BounceIn;
 import animatefx.animation.FadeIn;
 import javafx.application.Application;
@@ -19,7 +19,7 @@ public class HelloApplication extends Application {
 
 //        new FadeIn(root).play();
             new BounceIn(root).play();
-
+        stage.resizableProperty().setValue(Boolean.FALSE);
         stage.setScene(scene);
         stage.show();
 
